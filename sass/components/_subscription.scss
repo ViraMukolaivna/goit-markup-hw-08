@@ -1,0 +1,64 @@
+.subscription {
+    margin-left: auto;
+}
+
+.subscription__title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: var(--letter-spacing-normal);
+    text-transform: uppercase;
+    color: var(--color-white);
+    margin-bottom: 20px;
+}
+
+.subscription__form {
+    display: flex;
+}
+
+.subscription__input {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.25;
+    display: flex;
+    align-items: center;
+    min-width: 358px;
+    min-height: 50px;
+    letter-spacing: var(--letter-spacing-normal);
+    color: #ffffff99;
+    background-color: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    padding-left: 16px;
+}
+
+.subscription__button {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--color-light-blue);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    min-width: 200px;
+    min-height: 50px;
+    border: 1px solid var(--color-light-blue);
+    margin-left: 12px;
+    letter-spacing: 0.06em;
+    color: var(--color-white);
+    transition: background-color var(--transition-dur-and-func);
+
+    &:hover,
+    &:focus {
+        background-color: var(--color-dark-blue);
+    }
+}
+
+.subscription__button_icon {
+    width: 24px;
+    height: 24px;
+    margin-left: 10px;
+}

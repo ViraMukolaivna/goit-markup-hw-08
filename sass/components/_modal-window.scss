@@ -1,0 +1,44 @@
+.modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 528px;
+    padding: 40px;
+    background-color: var(--color-white);
+}
+
+.modal__form {
+    display: flex;
+    flex-direction: column;
+}
+
+.modal__form_field {
+    margin-bottom: 10px;
+}
+
+.modal__close_btn {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    background-color: var(--color-white);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    padding: 0;
+    transition: fill var(--transition-dur-and-func);
+
+}
+
+.modal__input_icon {
+    transition: fill var(--transition-dur-and-func);
+
+    .modal__close_btn:hover &,
+    .modal__close_btn:focus & {
+        fill: var(--color-light-blue)
+    }
+}
