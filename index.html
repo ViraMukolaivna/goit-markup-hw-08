@@ -14,7 +14,7 @@
 <body>
 <!-- /* ===================ХЕДЕР ГОЛОВНОЇ СТОРІНКИ==================== */ -->
     <header class="header">
-        <div class="container header-container">
+        <div class="container header__container">
         <nav class="page-navigation">
             <a class="logo list link" href="./index.html">
                 <span class="logo__first-part">Web</span><span class="logo__second-part">Studio</span></a>
@@ -30,6 +30,11 @@
                 </li>
             </ul>
         </nav>
+        <button type="button" class="open_mobile_menu_btn" data-menu-open>
+            <svg class="open_mobile_menu_btn__icon" aria-label="іконка меню для телефона">
+                <use href="./images/sprite.svg#burger-icon" ></use>
+            </svg>
+        </button>
             <!-- контакти -->
                 <ul class="contacts list">
                     <li class="contacts__email-item">
@@ -52,19 +57,28 @@
                     </li>
                 </ul>
         </div>
+        <div class="mobile_menu" data-menu>
+            <div class="container mobile_menu___container">
+                <button class="mobile_menu__close_btn " data-menu-close>
+                    <svg class="mobile_menu__close_icon" aria-label="хрестик">
+                        <use href="./images/sprite.svg#icon-close-black" ></use>
+                    </svg>
+                </button>
+            </div>
+        </div>
     </header>
 <!----------------========HERO =============-------->
 <main>
-    <section class="hero">
+    <!-- <section class="hero">
         <div class="container hero__container">
             <h1 class="hero__title">Ефективні рішення для <br>
                  вашого бізнесу</h1>
                 <button data-modal-open class="hero__button" type="button">Замовити послугу</button>
         </div>
-    </section>
+    </section> -->
 
 <!-- /* ==========ОСОБЛИВОСТІ=========================== */ -->
-    <section class="section">
+    <!-- <section class="section">
         <div class="container">
          <h2 class="priorities__head-title visually-hidden">Наші пріоритети</h2>
             <ul class="priorities list">
@@ -118,10 +132,10 @@
                 </li>
             </ul>
         </div>    
-    </section>
+    </section> -->
 
 <!-- /* =============НАША РОБОТА=============================== */ -->
-    <section class="work section">
+    <!-- <section class="work section">
         <div class="container">
             <h2 class="section__title">Чим ми займаємося</h2>
             <ul class="work__list list">
@@ -142,9 +156,9 @@
                 </li>
             </ul>
         </div>
-    </section>
+    </section> -->
 <!-- /* ==================КОМАНДА===================*/ -->
-    <section class="section-team section">
+    <!-- <section class="section-team section">
         <div class="container">
             <h2 class="section__title">Наша команда</h2>
         <ul class="team__list list">
@@ -354,9 +368,9 @@
         </ul>
           
         </div>  
-    </section>
+    </section> -->
 <!-- ================ПОСТІЙНІ КЛІЄНТИ========================== -->
-<section class="section">
+<!-- <section class="section">
     <div class="container">
         <h2 class="section__title">Постійні клієнти</h2>
         <ul class="customer__list list">
@@ -421,11 +435,11 @@
             </li>
         </ul>
     </div>
-</section>
+</section> -->
 <!-- ================ПОСТІЙНІ КЛІЄНТИ========================== -->
 </main>
 <!-- /* ==============ФУТЕР================================ */-->
-    <footer class="footer">
+    <!-- <footer class="footer">
         <div class="container footer__container">
             <address class="footer__address">
                 <a class="footer-logo link" href="./index.html"><span class="logo__first-part">Web</span><span class="footer-logo__second-part">Studio</span></a>
@@ -584,6 +598,7 @@
             </form>
         </div>
     </div>
-    <script src="./js/modal.js"></script>
+    <script src="./js/modal.js"></script> -->
+    <script src="./js/menu.js"></script>
 </body>
 </html>

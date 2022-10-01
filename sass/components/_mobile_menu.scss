@@ -1,0 +1,38 @@
+.mobile_menu {
+    position: fixed;
+    z-index: 100;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: var(--color-white);
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity var(--transition-dur-and-func), 
+    visibility var(--transition-dur-and-func),
+    pointer-events var(--transition-dur-and-func);
+}
+.mobile_menu.is-open {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+}
+.mobile_menu___container {
+    position: relative;
+}
+.mobile_menu__close_btn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    border: none;
+    background-color: transparent;
+    padding: 0;
+}
+.mobile_menu__close_icon {
+    line-height: 0;
+    height: 40px;
+    width: 40px;
+    
+
+}
